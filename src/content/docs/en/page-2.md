@@ -1,50 +1,117 @@
 ---
-title: "Page 2"
-description: "Lorem ipsum dolor sit amet - 2"
+title: "Tutorial"
+description: "Tutorial"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Create a New Squad**
 
-Sed flavum. Stridore nato, Alcandrumque desint ostendit derat, longoque, eadem
-iunxit miserum pedum pectora. Liberat sine pignus cupit, ferit mihi venias
-amores, et quod, maduere haec _gravi_ contentusque heros. Qui suae attonitas.
+1. Click "Squads" on the left-hand side menu to display the current list of Squads.
 
-_Acta caelo_ ego, hoc illi ferroque, qui fluitque Achillis deiecerat erat
-inhospita arasque ad sume et aquis summo. Fugerat ipse iam. Funeris Iuno Danaos
-est inroravere aurum foret nati aeque tetigisset! Esse ad tibi queritur [Sol sub
-est](http://iusserat.net/) pugno solitoque movet coercuit solent caput te?
+1. Create a new Squad by clicking on the "Create" Button in the top Nav Bar.
 
-Crescit sint petit gemellos gemino, et _gemma deus sub_ Surrentino frena
-principiis statione. Soporiferam secunda nulli Tereus is _Aeolidae cepit_, tua
-peregrinosque illam parvis, deerit sub et times sedant.
+1. Fill in the form as you please, e.g.
 
-## Apium haec candida mea movebo obsuntque descendat
+   - Name: My Squad
+   - Description: A test squad.
 
-Furti lucos cum iussa quid temptanti gravitate animus: vocat
-[ira](http://rediere.com/): illa. Primis aeternus, illi cinguntur ad mugitus
-aevo repentinos nec.
+   You will be added to the list of members by default.
 
-Transcurrere tenens in _litore_ tuti plebe circumspicit viventi quoque mox
-troades medio mea locuta gradus perque sic unguibus
-[gramen](http://quantoque.io/). Effetus celerique nomina quoque. Ire gemino est.
-Eurus quaerenti: et lacus, tibi ignorant tertia omnes subscribi ducentem sedit
-experientia sine ludunt multae. Ponderis memor purasque, ut armenta corpora
-efferre: praeterea infantem in virgam verso.
+   Click "Submit" to create the Squad. You will be returned to the list page.
 
-- Revellit quoniam vulnerat dique respicit
-- Modo illis
-- Nec victoria quodque
-- Spectans si vitis iussorum corpora quas
+1. Click on the "Select" Action next to the new Squad. You'll see that the
+   Squad appears in the top-right corner of the Nav Bar. This is the currently
+   selected Squad when working in other parts of the application. All work is
+   done in context of a particular Squad. A User may belong to more than one Squad.
+   You may also notice that additional functions in the Side Menu only appear when
+   a Squad is selected.
 
-Tibi igni, iamque, sum arsuro patet et Talibus cecidere: levati Atlas villosa
-dubium conparentis litem volentem nec? Iuga tenent, passi cumque generosior
-luminis, quique mea aequora ingens bracchia furor, respiramen eram: in. Caelebs
-et passu Phaethonta alumna orbem rapuit inplet [adfusaeque
-oculis](http://www.virum.net/ille-miserae.html) paene. Casus mea cingebant idque
-suis nymphe ut arae potuit et non, inmota erat foret, facta manu arvum.
+1. The "Campaigns" Action takes you to the list of Campaigns. This is the same as
+   clicking Campaigns in the Side Menu except this action will automatically change
+   the selected Squad.
 
-Fugam nec stridentemque undis te solet mentemque Phrygibus fulvae adhuc quam
-cernimus est! Aper iube dederat adsere iamque mortale ita cornua si fundamina
-quem caperet, iubeas stolidae pedesque intrarunt navigat triformis. Undas terque
-digitos satis in nautae sternuntur curam, iaculum ignoscere _pianda dominique
-nostra_ vivacemque teneraque!
+**Create a New Campaign**
+
+1. Click the "Campaigns" Action. The list will be empty. Create a new Campaign by
+   clicking on the "Create" Button in the top Nav Bar. You will be taken to a form
+   to enter the Campaign details. This will include details used by the Content
+   Generator to customise the content.
+
+1. Fill in the form as you please, e.g.
+
+   - Name: My Campaign
+   - Brief: A test campaign to entice our broadband customer base to upgrade their
+     mobile handset, appealing to their need to work from anywhere.
+   - Brand: BT
+   - Dates: Now + 30 days
+   - Jira Epic: BVPCONV-5555
+   - Automated: Yes
+
+1. The "Primary Features" field has a "Set" button. This will open a window to enter
+   additional details for the Campaign. These details define features that are used
+   in Prompts to customise the content generation.
+
+1. Click the "Set" button, which opens a form to define the primary features of the
+   Campaign. Fill in the form as you wish, e.g.
+
+   - Format: Email Subject Line
+   - Journey: Cross Sell
+   - Need State: Working from Anywhere
+   - Product Category: Mobile Phones
+   - Product: `<leave blank>`
+   - Style: Humorous
+   - Unique Selling Points: Value
+
+   Click "Set" to add the features to the Campaign.
+
+1. Click "Submit" to create the Campaign. You are returned to the Campaign List.
+
+**Generate Content**
+
+1. Click on the "Creative" Action next to the new Campaign. This opens the main
+   Creative Workbench. To create more space, you can compact the Side Menu by
+   clicking on the left arrow at the bottom of the Side Menu.
+
+   On the left of the work area is a summary of the Campaign features.
+
+   On the right are parameters to control the generation process.
+
+   The middle area includes, from top to bottom:
+
+   <ol type="A">
+     <li>Search box to find previously generated content, or content generated by other users.
+     <li>A list of content already generated for this Campaign. Content is divided into two
+         tabs &ndash; Copy and Images.
+     <li>Functions to "Auto Generate" content given the Campaign Features and Generation Parameters,
+         or alternatively, a Chat interface to interact directly with ChatGPT to generate
+         content.
+   </ol>
+
+1. One of the Generation Parameters is to create variants based on a category such as "Need State".
+   Click "Set" in the "Variation" > "By Category" field. This will open a window to define the
+   variation parameters.
+
+1. Select "Need State" from the "Vary by" dropdown. This will show a list of Need States.
+
+   Check "Gaming" and "Working from Anywhere" in the left-hand box. Click the right-arrow in
+   the middle to transfer these items to the "Selected" box on the right.
+
+   Click "Set" to add these variations to the Generation Parameters.
+
+1. Click "Autogen", which is located just below the Copy list. This uses the Campaign Features and
+   Generation Parameters to generate copy content. The content will appear at the top of the
+   Copy List.
+
+1. Click the "Edit" Action to make a change. Change as you will. To save the copy, select the
+   row, then click "Save", which is located just above the list.
+
+**Submit for Review**
+
+1. We'll promote this copy for internal review. Click on the "Submit for Review" Action and, for
+   the purpose of this tutorial, add yourself as the reviewer from the dropdown.
+
+1. Click on "My Reviews" in the Side Menu. You will see a list of content, assigned to you, to
+   approve. Click "Approve" for the item you just assigned.
+
+This concludes the Tutorial. We've only covered a subset of the capabilities, but hopefully it's
+provided a flavour of what the application is capable of. Stay tuned for further documentation
+and examples.
