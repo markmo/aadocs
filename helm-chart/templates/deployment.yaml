@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agencydocs
+  labels:
+    app: agencydocs
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: agencydocs
+  template:
+    metadata:
+      labels:
+        app: agencydocs
+    spec:
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecret }}
+      containers:
+        - name: docs-container
+          image: "{{ .Values.containerRegistry }}/agencydocs:{{ .Values.image.tag }}"

@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: agencydocs
+  namespace: {{ .Values.namespace }}
+spec:
+  type: NodePort
+  selector:
+    app: agencydocs
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080

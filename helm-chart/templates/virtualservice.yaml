@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: agencydocs-virtualservice
+  namespace: jhub
+spec:
+  gateways:
+  - europa-standalone-gateway
+  hosts:
+  - agencydocs.devsheds.io
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: agencydocs.jhub.svc.cluster.local
+        port:
+          number: 8080

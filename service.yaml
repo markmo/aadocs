@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: agencydocs
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/apt-phenomenon-243802/agencydocs:0.1.0

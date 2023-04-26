@@ -7,6 +7,8 @@ description: "Tutorial"
 
 1. Click "Squads" on the left-hand side menu to display the current list of Squads.
 
+   ![Squad List](/assets/squads-list.png)
+
 1. Create a new Squad by clicking on the "Create" Button in the top Nav Bar.
 
 1. Fill in the form as you please, e.g.
@@ -35,6 +37,8 @@ description: "Tutorial"
    clicking on the "Create" Button in the top Nav Bar. You will be taken to a form
    to enter the Campaign details. This will include details used by the Content
    Generator to customise the content.
+
+   ![Empty ](/assets/empty-campaign-list.png)
 
 1. Fill in the form as you please, e.g.
 
@@ -65,6 +69,8 @@ description: "Tutorial"
 
 1. Click "Submit" to create the Campaign. You are returned to the Campaign List.
 
+![Empty ](/assets/campaign-list.png)
+
 **Generate Content**
 
 1. Click on the "Creative" Action next to the new Campaign. This opens the main
@@ -86,9 +92,13 @@ description: "Tutorial"
          content.
    </ol>
 
+   ![Empty ](/assets/compacted-creative-workbench.png)
+
 1. One of the Generation Parameters is to create variants based on a category such as "Need State".
    Click "Set" in the "Variation" > "By Category" field. This will open a window to define the
    variation parameters.
+
+   ![Empty ](/assets/variations-form.png)
 
 1. Select "Need State" from the "Vary by" dropdown. This will show a list of Need States.
 
@@ -97,9 +107,13 @@ description: "Tutorial"
 
    Click "Set" to add these variations to the Generation Parameters.
 
+   ![Empty ](/assets/selected-variations.png)
+
 1. Click "Autogen", which is located just below the Copy list. This uses the Campaign Features and
    Generation Parameters to generate copy content. The content will appear at the top of the
    Copy List.
+
+   ![Empty ](/assets/generated-copy.png)
 
 1. Click the "Edit" Action to make a change. Change as you will. To save the copy, select the
    row, then click "Save", which is located just above the list.

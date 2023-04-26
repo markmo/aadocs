@@ -1,0 +1,8 @@
+image:
+  tag: 0.1.1
+
+namespace: jhub
+
+imagePullSecret: gcr-secret
+
+containerRegistry: gcr.io/apt-phenomenon-243802
