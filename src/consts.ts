@@ -21,7 +21,7 @@ export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
 export const GITHUB_EDIT_URL = `https://github.com/markmo/aadocs/tree/main/examples/docs`;
 
-export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
+export const COMMUNITY_INVITE_URL = ``;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
@@ -40,7 +40,10 @@ export const SIDEBAR: Sidebar = {
       { text: 'Introduction', link: 'en/introduction' },
       { text: 'Tutorial', link: 'en/page-2' },
     ],
-    'Concepts': [{ text: 'Prompt', link: 'en/page-4' }],
-    'Technical Docs': [{ text: 'Architecture', link: 'en/page-5' }],
+    'Concepts': [{ text: 'Prompts', link: 'en/page-4' }],
+    'Technical Docs': [
+      { text: 'Architecture', link: 'en/page-5' },
+      { text: 'Authentication', link: 'en/page-6' },
+    ],
   },
 };

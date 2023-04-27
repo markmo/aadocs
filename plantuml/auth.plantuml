@@ -1,0 +1,39 @@
+@startuml
+actor User as User
+User -> Frontend : resource request
+Frontend -> Backend : get current user
+Backend -> Backend : is user logged in?
+Backend --> Frontend : [No] 401
+Frontend -> Frontend : redirect to /login
+Frontend -> Backend : login
+Backend --> Frontend : auth redirect
+Frontend -> Keycloak
+Keycloak -> Keycloak : login
+Keycloak -> Backend : callback with access code
+Backend -> Keycloak : request access token
+Keycloak --> Backend : access + refresh tokens
+Backend -> Backend : tokens are encrypted and cryptographically signed using a secret
+Backend --> Frontend : encrypted JWT
+Frontend -> Backend : get current user
+Backend -> Backend : is user logged in?
+Backend -> Frontend : [Yes] profile + tokens
+Frontend -> Backend : API call using bearer access token and JWT
+Backend -> Backend : decrypt JWT, is token valid?
+Backend --> Frontend : [Yes] return result
+Frontend -> Backend : API call using bearer access token and JWT
+Backend -> Backend : token valid?
+Backend --> Frontend : [No] 401 token has expired
+note left
+access tokens have a short life,
+less than the session timeout ~30 min
+end note
+Frontend -> Backend : use refresh token to request new access token
+note right
+access and refresh tokens are held in memory only,
+on page reload new tokens are requested as part of the
+authentication flow
+end note
+Backend -> Keycloak : request new token
+Keycloak --> Backend : fresh token
+Backend --> Frontend : fresh token
+@enduml

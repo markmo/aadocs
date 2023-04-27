@@ -1,5 +1,5 @@
 ---
-title: "Prompt"
+title: "Prompts"
 description: "Describes a prompt"
 ---
 
