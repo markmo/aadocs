@@ -40,6 +40,7 @@ export const SIDEBAR: Sidebar = {
       { text: 'Introduction', link: 'en/introduction' },
       { text: 'Tutorial', link: 'en/page-2' },
     ],
-    Concepts: [{ text: 'Prompt', link: 'en/page-4' }],
+    'Concepts': [{ text: 'Prompt', link: 'en/page-4' }],
+    'Technical Docs': [{ text: 'Architecture', link: 'en/page-5' }],
   },
 };
