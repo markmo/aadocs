@@ -24,11 +24,11 @@ export const GITHUB_EDIT_URL = `https://github.com/markmo/aadocs/tree/main/examp
 export const COMMUNITY_INVITE_URL = ``;
 
 // See "Algolia" section of the README for more information.
-export const ALGOLIA = {
-  indexName: 'agencydocs',
-  appId: 'Y7P0AE8T9F',
-  apiKey: '68023971f4dcec7781b52711acf41faf',
-};
+// export const ALGOLIA = {
+//   indexName: 'agencydocs',
+//   appId: process.env.ALGOLIA_APP_ID,
+//   apiKey: process.env.ALGOLIA_APP_KEY,
+// };
 
 export type Sidebar = Record<
   typeof KNOWN_LANGUAGE_CODES[number],
